@@ -76,8 +76,8 @@
                 return "Erro: Senha fraca. Deve ter no mínimo 8 caracteres, 1 letra maiúscula e 1 número.";
             }
 
-            foreach ($this->user->getUsers() as $u) {
-                if ($u['email'] === $email) {
+            foreach ($this->user->getUsers() as $usuario) {
+                if ($usuario['email'] === $email) {
                     return "Erro: E-mail já está em uso.";
                 }
             }
